@@ -1,0 +1,33 @@
+.footer {
+  background: #e7e7e7;
+  padding: 21px 0 16px;
+  &__content {
+    @include flex(center, space-between);
+    p {
+      color: #454242;
+    }
+  }
+  &__links {
+    @include flex(center, center);
+    a {
+      position: relative;
+      margin-left: 15px;
+      display: block;
+      &:after {
+        display: block;
+        position: absolute;
+        content: '';
+        width: 0;
+        left: 50%;
+        transform-origin: center;
+        height: 1px;
+        background: #82699d;
+        transition: .1s;
+      }
+      &:hover::after {
+        width: 100%;
+        left: 0;
+      }
+    }
+  }
+}

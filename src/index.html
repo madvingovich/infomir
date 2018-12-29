@@ -1,0 +1,117 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Infomir</title>
+    <link rel="stylesheet" href="css/main.css">
+</head>
+<body >
+    <header class="header wrapper__content">
+        <div class="burger"><span> </span><span> </span><span> </span></div>
+        <div class="header__content">
+            <div class="header__logo"><a href="#"><img src="img/logo.png" alt=""></a></div>
+            <nav>
+                <ul class="header__menu">
+                    <li><a href="#"><img src="img/home.png" alt=""><span>Home</span></a></li>
+                    <li><a href="#"><img src="img/about_us.png" alt=""><span>About Us</span></a></li>
+                    <li><a href="#"><img src="img/services.png" alt=""><span>Services</span></a></li>
+                    <li id="contact_us"><a href="#"><img src="img/contact_us.png" alt=""><span>Contact Us</span></a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <section class="slider wrapper__content">
+        <button class="slider__btn slider__btn_prev"><img src="img/slide.png" alt=""></button>
+        <button class="slider__btn slider__btn_next"><img src="img/slide.png" alt=""></button>
+        <div class="slider__items">
+            <div class="slider__item">
+                <div class="slider__text">
+                    <h2>Minto</h2>
+                    <p>A minimal Web Design  from cssauthor.com</p>
+                </div>
+                <img class="slider__img" src="img/banner1.png" alt="">
+            </div>
+
+            <div class="slider__item">
+                <div class="slider__text">
+                    <h2>Minto 2</h2>
+                    <p>A minimal Web Design  from cssauthor.com</p>
+                </div>
+                <img class="slider__img" src="img/banner2.png" alt="">
+            </div>
+
+            <div class="slider__item">
+                <div class="slider__text">
+                    <h2>Minto 3</h2>
+                    <p>A minimal Web Design  from cssauthor.com</p>
+                </div>
+                <img class="slider__img" src="img/banner3.png" alt="">
+            </div>
+
+            <div class="slider__item">
+                <div class="slider__text">
+                    <h2>Minto 4</h2>
+                    <p>A minimal Web Design  from cssauthor.com</p>
+                </div>
+                <img class="slider__img" src="img/banner4.png" alt="">
+            </div>
+        </div>
+    </section>
+
+    <section class="quote wrapper__content">
+        <div class="quote__content">
+            <p><span>Lorem ipsum dolor sit amet</span>, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+        </div>
+    </section>
+
+    <section class="content wrapper__content">
+        <div class="content__img">
+            <img src="img/round.png" alt="">
+        </div>
+        <div class="content__text">
+            <h3>Lorem ipsum dolor sit amet</h3>
+            <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem. </p>
+        </div>
+        <div class="content__btn">
+            <a href="#">Read more <img class="content__btn_img" src="img/more.png" alt=""></a>
+        </div>
+    </section>
+
+    <section class="clients wrapper__content">
+        <h3><b>Where</b> We Have Been Featured</h3>
+        <ul class="clients__list">
+            <li><a href="#"><img src="img/part_1.png" alt="About.com"></a></li>
+            <li><a href="#"><img src="img/part_2.png" alt="Mashable"></a></li>
+            <li><a href="#"><img src="img/part_3.png" alt="TechCrunch"></a></li>
+            <li><a href="#"><img src="img/part_4.png" alt="BusinessWeek"></a></li>
+        </ul>
+    </section>
+
+    <footer class="footer">
+        <div class="footer__content wrapper__content">
+            <p>&copy; Copyright 2010 - All rights reserved</p>
+            <div class="footer__links">
+                <a href="#"><img src="img/facebook.png" alt="facebook"></a>
+                <a href="#"><img src="img/twitter.png" alt="twitter"></a>
+            </div>
+        </div>
+    </footer>
+
+    <div class="modal">
+        <div class="modal__close"><span> </span><span> </span></div>
+        <form action="./writeFile.php" novalidate method="post">
+            <input name="name" type="text" placeholder="Your Name">
+            <input name="email" type="email" placeholder="Your Email">
+            <textarea name="text" placeholder="Talk To Us..."></textarea>
+            <button type="submit">Submit</button>
+        </form>
+    </div>
+</div>
+
+<script src="js/main.js"></script>
+</body>
+</html>

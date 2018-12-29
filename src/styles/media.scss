@@ -1,0 +1,142 @@
+
+//from 768 to 1024
+@media (max-width: 1024px) {
+  body {
+    font-size: 14px;
+  }
+  .header__content {
+    padding: 20px;
+  }
+  .header__menu li:not(:last-child) {
+    margin-right: 30px;
+  }
+  .content__btn {
+    right: 42px;
+  }
+  .footer {
+    padding: 21px 16px;
+  }
+  .modal form {
+    width: 60%;
+    padding: 30px;
+  }
+}
+//from 600 to 767
+@media (max-width: 767px) {
+  body {
+    font-size: 12px;
+  }
+  .burger {
+    display: block !important;
+    z-index: 95;
+  }
+  .header__menu {
+    position: fixed;
+    left: 0;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(255,255,255,.95);
+    transform: translateX(100%);
+    opacity: 0;
+    transition: .5s;
+    z-index: -1;
+    &_active {
+      transform: translateX(0);
+      opacity: 1;
+      z-index: 90;
+    }
+    & li {
+      display: block;
+      width: 100%;
+      text-align: center;
+      font-size: 2em;
+      margin: 7vh 0;
+      color: #000;
+      opacity: 0;
+      transform: translateX(100px);
+      transition: .3s;
+      &.active {
+        opacity: 1;
+        transform: translateX(0);
+      }
+      a {
+        color: #000;
+      }
+      &:first-child {
+        margin-top: 25vh;
+      }
+    }
+  }
+
+  .header__logo img {
+    max-width: 150px;
+  }
+  .modal__close {
+    right: 35px;
+    top: 20px;
+  }
+  .modal form textarea {
+    margin-top: 30px;
+  }
+  .modal form textarea {
+    height: 120px;
+  }
+}
+
+//from 500 to 599
+@media (max-width: 500px) {
+  body {
+    font-size: 10px;
+  }
+  .slider__btn {
+    width: 30px;
+    height: 50px;
+    & img {
+      display: block;
+      width: 55%;
+    }
+  }
+  .content {
+    display: block;
+  }
+  .content__img {
+    margin: 0 auto;
+  }
+  .content__text {
+    width: 100%;
+    text-align: center;
+  }
+  .content__btn {
+    right: auto;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+  .content__img {
+    width: 60%;
+    margin-bottom: 25px;
+  }
+}
+
+//from 320 to 499
+@media (max-width: 320px) {
+  .slider {
+    font-size: 7px;
+  }
+  .slider__text p {
+    margin-bottom: 0;
+  }
+  .slider__btn {
+    width: 25px;
+    height: 45px;
+  }
+  .clients__list {
+    flex-wrap: wrap-reverse;
+    & li {
+      width: 50%;
+    }
+  }
+  .clients {
+    margin-bottom: 20px;
+  }
+}

@@ -1,0 +1,96 @@
+.header {
+  &__content {
+    @include flex(center, space-between);
+    padding: 20px 0;
+  }
+  &__logo img {
+    max-width: 200px;
+
+  }
+  .burger {
+    display: none;
+    position: absolute;
+    top: 50px;
+    right: 30px;
+    width: 40px;
+    height: 30px;
+    transform: translateY(-50%);
+    cursor: pointer;
+    &:hover {
+      span:nth-child(1) {
+        left: 48%;
+        right: 0;
+      }
+      span:nth-child(3) {
+        right: 47%;
+      }
+    }
+    & span {
+      position: absolute;
+      width: 52%;
+      height: 3px;
+      background: #82699d;
+      transition: .2s;
+      &:nth-child(1) {
+        left: 0;
+        top: 20%;
+      }
+      &:nth-child(2) {
+        left: 50%;
+        top: 50%;
+        transform: translate(-50%, -50%);
+        width: 30% !important;
+      }
+      &:nth-child(3) {
+        right: 0;
+        bottom: 20%;
+      }
+    }
+    &__active {
+      span {
+        width: 100%;
+      }
+      //don't move lines on hover if menu is opened
+      &:hover {
+        span:nth-child(1) {
+          left: 0;
+        }
+        span:nth-child(3) {
+          right: 0;
+        }
+      }
+    }
+  }
+  &__menu li {
+    display: inline-block;
+    font-size: 1.1875em;
+    a {
+      color: #545454;
+      position: relative;
+      &:after {
+        display: block;
+        position: absolute;
+        content: '';
+        bottom: -5px;
+        width: 0;
+        left: 50%;
+        height: 1px;
+        background: #82699d;
+        transition: .2s ;
+      }
+      &:hover {
+        color: #000;
+      }
+      &:hover::after {
+        width: 100%;
+        left: 0;
+      }
+    }
+    &:not(:last-child) {
+      margin-right: 69px;
+    }
+  }
+  &__menu img {
+    margin-right: 9px;
+  }
+}
